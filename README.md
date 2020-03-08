@@ -6,5 +6,5 @@
 
 - [linux.sh](https://github.com/waterrr/Script/blob/master/linux.sh)   
   -  Linux常用的一键脚本，各种功能持续增加中。
-     <div align=center>![20200309004359.png](https://i.loli.net/2020/03/09/W2BUZi9gC8X5hVu.png)
+  -  ![20200309004359.png](https://i.loli.net/2020/03/09/W2BUZi9gC8X5hVu.png)
      
