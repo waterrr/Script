@@ -107,6 +107,7 @@ echo "DockerHub加速安装完毕"
 
 echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.1]${Font_color_suffix}
   ---- W4ter | https://github.com/waterrr  ----
+  ---- iriszero | https://github.com/iriszero48  ----
 
   ${Green_font_prefix}1.${Font_color_suffix} 更换Ubuntu18.04(bionic)默认源为阿里源
   ${Green_font_prefix}2.${Font_color_suffix} 更换Ubuntu16.04默认源为阿里源
