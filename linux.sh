@@ -133,7 +133,17 @@ echo `curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s https://d
 echo "DockerHub加速安装完毕"
 }
 
-echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.1]${Font_color_suffix}
+Superbench(){
+    while [ ! -f ./superbench2.sh ]; do
+            wget -N -P ./ --no-check-certificate https://raw.fastgit.org/waterrr/Script/master/superbench2.sh
+    done
+    sudo bash ./superbench2.sh
+    sudo rm ./superbench2.sh
+    break
+}
+
+echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.2]${Font_color_suffix}
+  ----Upgrade in 2021-1-8 ----
   ---- W4ter | https://github.com/waterrr  ----
   ---- iriszero | https://github.com/iriszero48  ----
 
@@ -146,9 +156,11 @@ echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.1]${Font_color_
   ${Green_font_prefix}6.${Font_color_suffix} 一键安装Docker Compose【国内镜像】
   ${Green_font_prefix}7.${Font_color_suffix} 一键加速DockerHub镜像【Azure国内镜像】
 ————————————
+  ${Green_font_prefix}8.${Font_color_suffix} 一键测试服务器性能/网速 | Superbench修复版
+————————————
   ${Green_font_prefix}0.${Font_color_suffix} ${Red_font_prefix}EXIT${Font_color_suffix}
  "
-	echo && read -e -p "请输入数字 [0-6]：" num
+	echo && read -e -p "请输入数字 [0-8]：" num
 case "$num" in
 	0)
 	exit 0
@@ -173,6 +185,9 @@ case "$num" in
 	;;
 	7)
 	Docker_Hub
+	;;
+	8)
+	Superbench
 	;;
 	*)
 	echo -e "${Error} 请输入正确的数字 [0-6]"
