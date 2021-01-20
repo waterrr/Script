@@ -137,11 +137,12 @@ sudo echo "
   ]
 }
 ">/root/tmp
-sudo cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
-sudo rm /etc/docker/daemon.json
+mkdir /etc/docker/
+#sudo cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
+#sudo rm /etc/docker/daemon.json
 sudo cp /root/tmp /etc/docker/daemon.json
 sudo rm /root/tmp
-sudo echo "已经替换DockerHub为国内阿里/百度源"
+sudo echo "已经替换DockerHub为国内阿里/中科大源"
 }
 
 Superbench(){
@@ -165,7 +166,7 @@ echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.2]${Font_color_
 ————————————
   ${Green_font_prefix}5.${Font_color_suffix} 一键安装Docker【国内镜像】
   ${Green_font_prefix}6.${Font_color_suffix} 一键安装Docker Compose【国内镜像】
-  ${Green_font_prefix}7.${Font_color_suffix} 一键加速DockerHub镜像【Azure国内镜像】
+  ${Green_font_prefix}7.${Font_color_suffix} 一键加速DockerHub镜像【阿里/中科大源】
 ————————————
   ${Green_font_prefix}8.${Font_color_suffix} 一键测试服务器性能/网速 | Superbench修复版
 ————————————
