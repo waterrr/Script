@@ -129,8 +129,19 @@ echo "DockerCompose安装完毕"
 }
 
 Docker_Hub(){
-echo `curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s https://dockerhub.azk8s.cn`
-echo "DockerHub加速安装完毕"
+sudo echo "
+{
+  "registry-mirrors": [
+    "https://hub-mirror.c.163.com",
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+">/root/tmp
+sudo cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
+sudo rm /etc/docker/daemon.json
+sudo cp /root/tmp /etc/docker/daemon.json
+sudo rm /root/tmp
+sudo echo "已经替换DockerHub为国内阿里/百度源"
 }
 
 Superbench(){
