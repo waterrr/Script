@@ -142,6 +142,8 @@ mkdir /etc/docker/
 #sudo rm /etc/docker/daemon.json
 sudo cp /root/tmp /etc/docker/daemon.json
 sudo rm /root/tmp
+sudo systemctl daemon-reload
+sudo systemctl restart docker
 sudo echo "已经替换DockerHub为国内阿里/中科大源"
 }
 
