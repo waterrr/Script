@@ -45,7 +45,7 @@ session = requests.session()
 url = "https://xiaobei.yinghuaonline.com/prod-api/login"
 data = {
     "username": "43xxxxxxxxxxxxxxxx",     #修改为你登录的身份证
-    "password": "b2C1ZxIxMXS=",           #修改为你加密后密码，获取方法请自行抓包，类似Base64但不是base64，形如 b2C1ZxIxMXS=
+    "password": "MTIzNDU4Ng==",           #请把登录密码改为base64加密后的，例如密码为123456就填 MTIzNDU4Ng==
     "code": showCode,
     "uuid": uuid
 }
