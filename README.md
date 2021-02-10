@@ -7,4 +7,6 @@
 - [linux.sh](https://github.com/waterrr/Script/blob/master/linux.sh)   
   -  Linux常用的一键脚本，各种功能持续增加中。<br/>
 ![20200309004359.png](https://i.loli.net/2020/03/09/W2BUZi9gC8X5hVu.png)
-     
+
+- [HealthCheckin.py](https://github.com/waterrr/Script/blob/master/HealthCheckin.py) 
+  -  小北学生的自动健康打卡，目的是为了提醒自己每天有没有健康打卡，后来就干脆做成了全自动登录打卡，并发送状态，请严格配合学校进行防疫措施，切勿使用本脚本进行非法用途，扰乱防疫秩序。<br/>如有侵权，请联系本人删除。<br>使用请按照注释内容修改，其中不完美的地方是登录密码的加密算法没有破解，非base64（猜测为AES或DES），APP会先将明文密码加密再发送，使用本程序需要先抓包获得加密后的密码，如果有师傅会逆向的，愿意提供加密算法，感激不尽。
