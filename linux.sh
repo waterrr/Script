@@ -156,9 +156,10 @@ Superbench(){
 
 Netflix_check(){
 	while [ ! -f ./superbench2.sh ]; do
-        wget -N -P ./ --no-check-certificate https://cdn.jsdelivr.net/gh/waterrr/Script/linux.sh
+        wget -N -P ./ --no-check-certificate https://cdn.jsdelivr.net/gh/waterrr/Script/netflix_check.sh
     done
-
+chmod +x netflix_check.sh
+bash netflix_check.sh
 }
 
 echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.2]${Font_color_suffix}
