@@ -129,14 +129,12 @@ echo "DockerCompose安装完毕"
 }
 
 Docker_Hub(){
-sudo echo "
-{
+sudo echo "{
   \"registry-mirrors\": [
     \"https://hub-mirror.c.163.com\",
     \"https://docker.mirrors.ustc.edu.cn\"
   ]
-}
-">/root/tmp
+}">/root/tmp
 mkdir /etc/docker/
 #sudo cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
 #sudo rm /etc/docker/daemon.json
@@ -149,15 +147,22 @@ sudo echo "已经替换DockerHub为国内阿里/中科大源"
 
 Superbench(){
     while [ ! -f ./superbench2.sh ]; do
-            wget -N -P ./ --no-check-certificate https://raw.fastgit.org/waterrr/Script/master/superbench2.sh
+            wget -N -P ./ --no-check-certificate https://cdn.jsdelivr.net/gh/waterrr/Script/superbench2.sh
     done
     sudo bash ./superbench2.sh
     sudo rm ./superbench2.sh
     break
 }
 
+Netflix_check(){
+	while [ ! -f ./superbench2.sh ]; do
+        wget -N -P ./ --no-check-certificate https://cdn.jsdelivr.net/gh/waterrr/Script/linux.sh
+    done
+
+}
+
 echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.2]${Font_color_suffix}
-  ----Upgrade in 2021-1-8 ----
+  ----Upgrade in 2021-02-25 ----
   ---- W4ter | https://github.com/waterrr  ----
   ---- iriszero | https://github.com/iriszero48  ----
 
@@ -171,6 +176,7 @@ echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.2]${Font_color_
   ${Green_font_prefix}7.${Font_color_suffix} 一键加速DockerHub镜像【阿里/中科大源】
 ————————————
   ${Green_font_prefix}8.${Font_color_suffix} 一键测试服务器性能/网速 | Superbench修复版
+  ${Green_font_prefix}9.${Font_color_suffix} 一键测试服务器是否能看Netflix和解锁区域
 ————————————
   ${Green_font_prefix}0.${Font_color_suffix} ${Red_font_prefix}EXIT${Font_color_suffix}
  "
@@ -203,7 +209,10 @@ case "$num" in
 	8)
 	Superbench
 	;;
+	9)
+	Netflix_check
+	;;
 	*)
-	echo -e "${Error} 请输入正确的数字 [0-6]"
+	echo -e "${Error} 请输入正确的数字 [0-9]"
 	;;
 esac
