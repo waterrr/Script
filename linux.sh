@@ -181,7 +181,7 @@ echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.2]${Font_color_
 ————————————
   ${Green_font_prefix}0.${Font_color_suffix} ${Red_font_prefix}EXIT${Font_color_suffix}
  "
-	echo && read -e -p "请输入数字 [0-8]：" num
+	echo && read -e -p "请输入数字 [0-9]：" num
 case "$num" in
 	0)
 	exit 0
