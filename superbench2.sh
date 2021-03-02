@@ -173,14 +173,14 @@ benchinit() {
 	# install speedtest-cli
 	while  [ ! -e 'speedtest.py' ]; do
 		echo " Installing Speedtest-cli ..."
-		wget --no-check-certificate https://raw.githubusercontent.com/yzlijie/SPDTST/master/speedtest.py > /dev/null 2>&1
+		wget --no-check-certificate https://cdn.jsdelivr.net/gh/yzlijie/SPDTST/speedtest.py > /dev/null 2>&1
 	done
 	chmod a+rx speedtest.py
 	
 	# install speedtest-cli(original version)
 	while  [ ! -e 'speedtest_original.py' ]; do
 		echo " Installing speedtest-cli(original version) ..."
-		wget --no-check-certificate https://raw.githubusercontent.com/yzlijie/SPDTST/master/speedtest_original.py > /dev/null 2>&1
+		wget --no-check-certificate https://cdn.jsdelivr.net/gh/yzlijie/SPDTST/speedtest_original.py > /dev/null 2>&1
 	done
 	chmod a+rx speedtest_original.py
 
@@ -188,21 +188,21 @@ benchinit() {
 	# install tools.py
 	while  [ ! -e 'tools.py' ]; do
 		echo " Installing tools.py ..."
-		wget --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/tools.py > /dev/null 2>&1
+		wget --no-check-certificate https://cdn.jsdelivr.net/gh/oooldking/script/tools.py > /dev/null 2>&1
 	done
 	chmod a+rx tools.py
 	
 	while  [ ! -e 'ip_info.py' ]; do
 		echo " Installing ip_info.py ..."
-		wget --no-check-certificate https://raw.githubusercontent.com/zzycwmx/CDN/master/ip_info.py > /dev/null 2>&1
+		wget --no-check-certificate https://cdn.jsdelivr.net/gh/zzycwmx/CDN/ip_info.py > /dev/null 2>&1
 	done
 	chmod a+rx ip_info.py
 
 	# install fast.com-cli
 #	if  [ ! -e 'fast_com.py' ]; then
 #		echo " Installing Fast.com-cli ..."
-#		wget --no-check-certificate https://raw.githubusercontent.com/sanderjo/fast.com/master/fast_com.py > /dev/null 2>&1
-#		wget --no-check-certificate https://raw.githubusercontent.com/sanderjo/fast.com/master/fast_com_example_usage.py > /dev/null 2>&1
+#		wget --no-check-certificate https://cdn.jsdelivr.net/gh/sanderjo/fast.com/fast_com.py > /dev/null 2>&1
+#		wget --no-check-certificate https://cdn.jsdelivr.net/gh/sanderjo/fast.com/fast_com_example_usage.py > /dev/null 2>&1
 #	fi
 #	chmod a+rx fast_com.py
 #	chmod a+rx fast_com_example_usage.py
