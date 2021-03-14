@@ -117,8 +117,10 @@ sudo echo "已经更换PyPI默认源为阿里镜像源，请尝试执行【pip i
 Docker(){
 echo "正在安装Docker"
 echo `curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh --mirror Aliyun`
-echo "Docker完毕"
+echo "Docker安装完毕"
 echo `rm get-docker.sh`
+sudo systemctl daemon-reload
+sudo systemctl restart docker
 }
 
 Docker_Compose(){
