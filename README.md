@@ -1,5 +1,5 @@
 # 一些常用的脚本仓库
-## 居然有人Fork，在此表示感谢，插件将持续维护。
+## 居然有人Fork，在此表示感谢，脚本将持续维护。
 
 - [ssrmu.sh](https://github.com/bluekk935/doubi)  
 
