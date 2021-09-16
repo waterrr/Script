@@ -169,8 +169,8 @@ Netflix_check(){
 	while [ ! -f ./check.sh ]; do
         wget -N -P ./ --no-check-certificate https://cdn.jsdelivr.net/gh/waterrr/Script/check.sh
     done
-chmod +x netflix_check.sh
-bash netflix_check.sh
+chmod +x check.sh
+bash check.sh
 }
 
 echo -e "  Linux服务器常见一键脚本 ${Red_font_prefix}[0.3]${Font_color_suffix}
